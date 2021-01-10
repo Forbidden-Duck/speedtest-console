@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": "",
+        "module": "commonJS",
+        "target": "ES2015",
+        "checkJs": true,
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
