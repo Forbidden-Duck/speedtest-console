@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "Test console application that uses speedtest.net CLI using speedtest-net npm module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Duck#9999",
   "license": "MIT",
   "dependencies": {
     "cli-progress": "^3.8.2",
     "speedtest-net": "^2.1.1"
+  },
+  "scripts": {
+	"buildhost": "pkg index.js --target host --output output/speedtest.exe"
+  },
+  "bin": "index.js",
+  "pkg": {
+	"assets": "node_modules/**/*"
   }
 }
